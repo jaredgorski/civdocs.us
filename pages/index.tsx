@@ -16,10 +16,10 @@ const IndexPage = ({data}) => (
           const {author, title} = doc;
           const url = `/docs/${title.toLowerCase().replace(' ', '-')}`;
           return (
-            <li className="truncate flex justify-space-between" key={index}>
+            <li className="flex justify-space-between truncate" key={index}>
               <Link href={url}><a>{title}</a></Link>
-              <span className="truncate margin-left-24" title={author}>
-                <address className="author"><i>{author}</i></address>
+              <span className="margin-left-24 truncate" title={author}>
+                <address className="author truncate"><i>{author}</i></address>
               </span>
             </li>
           );
