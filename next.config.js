@@ -1,5 +1,3 @@
-const withCSS = require('@zeit/next-css');
-
 const getApiEndpoint = () => {
   switch (process.env.NODE_ENV) {
     case'development':
@@ -18,4 +16,4 @@ const config = {
   },
 };
 
-module.exports = withCSS(config);
+module.exports = config;
