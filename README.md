@@ -19,3 +19,6 @@ $ npm run build   # production build
 $ npm run dev     # run in development mode
 $ npm run start   # run in production mode
 ```
+## Repo links
+- [api.civdocs.us](https://github.com/jaredgorski/api.civdocs.us)
+- [data.civdocs.us](https://github.com/jaredgorski/data.civdocs.us)
