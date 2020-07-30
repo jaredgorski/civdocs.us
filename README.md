@@ -6,7 +6,7 @@
 
 **civdocs.us** makes it easy to read the founding documents of the United States of America. This site consumes data from [api.civdocs.us](http://api.civdocs.us), an open API meant to make these documents more widely available online.
 
-If you think a document should be added to the database, please open an issue on the [API repository](https://github.com/jaredgorski/api.civdocs.us).
+If you think a document should be added to the database, please open an issue on the [data repository](https://github.com/jaredgorski/data.civdocs.us).
 
 <div align="center">
   <h2>
