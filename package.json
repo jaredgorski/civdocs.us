@@ -16,10 +16,10 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "go": "./dev.sh",
     "dev": "NODE_ENV=development next",
     "build": "next build",
     "start": "NODE_ENV=production next",
+    "publish": "next build && now && now --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
