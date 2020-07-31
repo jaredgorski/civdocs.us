@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <meta name="description" content={description} />
           <meta name="og:title" property="og:title" content={ogTitle} />
           <meta name="og:description" property="og:description" content={description} />
-          <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"></link>
+          <link rel="icon" href="/assets/favicon.png"></link>
         </Head>
         <body>
           <Main />

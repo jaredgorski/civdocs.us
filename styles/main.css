@@ -1,13 +1,24 @@
+/* baskervville-regular - latin */
+@font-face {
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/baskervville-v1-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Baskervville Regular'), local('Baskervville-Regular'),
+       url('/assets/fonts/baskervville-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/baskervville-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/baskervville-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/baskervville-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/baskervville-v1-latin-regular.svg#Baskervville') format('svg'); /* Legacy iOS */
+}
+
 :root {
   --black: #1A1A1A;
   --highlighter: rgba(92, 175, 255, 0.5);
   --white: #F5F5F5;
 
   --font-sans: helvetica, 'helvetica neue', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-  --font-serif: 'Libre Baskerville', serif;
-
-  /* --font-sans: 'Public Sans', sans-serif; */
-  /* --font-serif: 'Libre Baskerville', serif; */
+  --font-serif: 'Baskerville', serif;
 }
 
 * :target {
@@ -22,6 +33,7 @@ html {
   background: var(--white);
   color: var(--black);
   font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
 }
 
 header {
@@ -93,6 +105,7 @@ ul.index-list li {
 
 .doc__content {
   font-family: var(--font-serif);
+  font-size: 1.1em;
   margin: 48px 0 72px;
 }
 

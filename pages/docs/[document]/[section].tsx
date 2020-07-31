@@ -1,12 +1,19 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../../components/layout'
 import Doc from '../../../components/doc'
 import axios from 'axios'
 
 const DocSection = props => (
-  <Layout>
-    <Doc {...props} />
-  </Layout>
+  <>
+    <Head>
+      <title>civdocs.us - {(props.doc && props.doc.title) || ''}</title>
+      <meta name="description" content="{(props.doc && props.doc.subtitle) || ''}"></meta>
+    </Head>
+    <Layout>
+      <Doc {...props} />
+    </Layout>
+  </>
 )
 
 export async function getStaticPaths() {

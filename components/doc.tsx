@@ -22,9 +22,9 @@ const DocBody = ({doc: {author, date, title, content, subtitle, prev_section_ind
       }
     </div>
     <hr />
-    <div className="doc__content">
+    <article className="doc__content">
       {Content(content)}
-    </div>
+    </article>
     <nav className="doc__nav doc__nav-bottom">
       <ul className="list-inline text-align-right margin-0">
         {prev_section_index ? <li><Link href={`/docs/${documentParam}/${prev_section_index}`}><a className="color-link">prev</a></Link></li> : null}

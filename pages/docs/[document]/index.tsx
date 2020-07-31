@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../../components/layout'
 import Doc from '../../../components/doc'
@@ -22,19 +23,25 @@ const DocSectionIndex = (urlPrefix, sections) => {
 }
 
 const DocPage = ({data, documentParam}) => (
-  <Layout>
-    <div className="doc-page">
-      <nav className="doc-page__nav">
-        <ul className="list-inline text-align-right margin-0">
-          <li><Link href="/"><a className="color-link">index</a></Link></li>
-        </ul>
-      </nav>
-      <h1>{data.title}</h1>
-      <address className="author"><i>{data.author}</i></address>
-      <p>{data.description}</p>
-      {DocSectionIndex(`/docs/${documentParam}`, data.sections)}
-    </div>
-  </Layout>
+  <>
+    <Head>
+      <title>civdocs.us - {data.title}</title>
+      <meta name="description" content="{data.description}"></meta>
+    </Head>
+    <Layout>
+      <div className="doc-page">
+        <nav className="doc-page__nav">
+          <ul className="list-inline text-align-right margin-0">
+            <li><Link href="/"><a className="color-link">index</a></Link></li>
+          </ul>
+        </nav>
+        <h1>{data.title}</h1>
+        <address className="author"><i>{data.author}</i></address>
+        <p>{data.description}</p>
+        {DocSectionIndex(`/docs/${documentParam}`, data.sections)}
+      </div>
+    </Layout>
+  </>
 )
 
 export async function getStaticPaths() {
