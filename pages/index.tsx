@@ -18,8 +18,8 @@ const IndexPage = ({data}) => (
         </p>
         <ul className="index-list">
           {data.map((doc, index) => {
-            const {author, title} = doc;
-            const url = `/docs/${title.toLowerCase().replace(' ', '-')}`;
+            const {author, title,} = doc;
+            const url = `/${title.toLowerCase().replace(' ', '-')}`;
             return (
               <li className="flex justify-space-between truncate" key={index}>
                 <Link href={url}><a>{title}</a></Link>

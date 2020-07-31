@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../../components/layout'
-import Doc from '../../../components/doc'
+import Layout from '../../components/layout'
+import Doc from '../../components/doc'
 import axios from 'axios'
 
 const DocSection = props => (

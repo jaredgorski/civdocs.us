@@ -42,4 +42,4 @@ const config = {
   },
 };
 
-module.exports = withOffline(withSourceMaps(config));
+module.exports = withSourceMaps(withOffline(config));

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../../components/layout'
-import Doc from '../../../components/doc'
+import Layout from '../../components/layout'
+import Doc from '../../components/doc'
 import axios from 'axios'
 
 const DocSectionIndex = (urlPrefix, sections) => {
@@ -38,7 +38,7 @@ const DocPage = ({data, documentParam}) => (
         <h1>{data.title}</h1>
         <address className="author"><i>{data.author}</i></address>
         <p>{data.description}</p>
-        {DocSectionIndex(`/docs/${documentParam}`, data.sections)}
+        {DocSectionIndex(`/${documentParam}`, data.sections)}
       </div>
     </Layout>
   </>
