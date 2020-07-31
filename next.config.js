@@ -1,3 +1,5 @@
+const withSourceMaps = require('@zeit/next-source-maps')
+
 const getApiEndpoint = () => {
   switch (process.env.NODE_ENV) {
     case'development':
@@ -16,4 +18,4 @@ const config = {
   },
 };
 
-module.exports = config;
+module.exports = withSourceMaps(config);
