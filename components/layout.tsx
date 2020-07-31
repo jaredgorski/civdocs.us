@@ -8,7 +8,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => (
   <main>
     <header>
-      <Link href="/">
+      <Link href="/" as="/">
         <a className="color-inherit text-decoration-none">
           <h1>civdocs.us</h1>
         </a>

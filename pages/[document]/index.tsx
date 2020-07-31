@@ -13,7 +13,7 @@ const DocSectionIndex = (urlPrefix, sections) => {
 
         return (
           <li className="truncate" key={index}>
-            <Link href={url}><a>{title}</a></Link>
+            <Link href="/[document]/[section]" as={url}><a>{title}</a></Link>
             <span className="truncate margin-left-24" title={subtitle}>{subtitle}</span>
           </li>
         );
@@ -32,7 +32,7 @@ const DocPage = ({data, documentParam}) => (
       <div className="doc-page">
         <nav className="doc-page__nav">
           <ul className="list-inline text-align-right margin-0">
-            <li><Link href="/"><a className="color-link">index</a></Link></li>
+            <li><Link href="/" as="/"><a className="color-link">index</a></Link></li>
           </ul>
         </nav>
         <h1>{data.title}</h1>

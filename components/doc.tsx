@@ -7,9 +7,9 @@ const DocBody = ({doc: {author, date, title, content, subtitle, prev_section_ind
   <>
     <nav className="doc__nav">
       <ul className="list-inline text-align-right margin-0">
-        {prev_section_index ? <li><Link href={`/${documentParam}/${prev_section_index}`}><a className="color-link">prev</a></Link></li> : null}
-        <li><Link href={`/${documentParam}`}><a className="color-link">index</a></Link></li>
-        {next_section_index ? <li><Link href={`/${documentParam}/${next_section_index}`}><a className="color-link">next</a></Link></li> : null}
+        {prev_section_index ? <li><Link href="/[document]/[section]" as={`/${documentParam}/${prev_section_index}`}><a className="color-link">prev</a></Link></li> : null}
+        <li><Link href="/[document]" as={`/${documentParam}`}><a className="color-link">index</a></Link></li>
+        {next_section_index ? <li><Link href="/[document]/[section]" as={`/${documentParam}/${next_section_index}`}><a className="color-link">next</a></Link></li> : null}
       </ul>
     </nav>
     <div className="doc__metadata">
@@ -27,9 +27,9 @@ const DocBody = ({doc: {author, date, title, content, subtitle, prev_section_ind
     </article>
     <nav className="doc__nav doc__nav-bottom">
       <ul className="list-inline text-align-right margin-0">
-        {prev_section_index ? <li><Link href={`/${documentParam}/${prev_section_index}`}><a className="color-link">prev</a></Link></li> : null}
-        <li><Link href={`/${documentParam}`}><a className="color-link">index</a></Link></li>
-        {next_section_index ? <li><Link href={`/${documentParam}/${next_section_index}`}><a className="color-link">next</a></Link></li> : null}
+        {prev_section_index ? <li><Link href="/[document]/[section]" as={`/${documentParam}/${prev_section_index}`}><a className="color-link">prev</a></Link></li> : null}
+        <li><Link href="/[document]" as={`/${documentParam}`}><a className="color-link">index</a></Link></li>
+        {next_section_index ? <li><Link href="/[document]/[section]" as={`/${documentParam}/${next_section_index}`}><a className="color-link">next</a></Link></li> : null}
       </ul>
     </nav>
   </>

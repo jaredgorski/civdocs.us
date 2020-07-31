@@ -22,7 +22,7 @@ const IndexPage = ({data}) => (
             const url = `/${title.toLowerCase().replace(' ', '-')}`;
             return (
               <li className="flex justify-space-between truncate" key={index}>
-                <Link href={url}><a>{title}</a></Link>
+                <Link href="/[document]" as={url}><a>{title}</a></Link>
                 <span className="margin-left-24 truncate" title={author}>
                   <address className="author truncate"><i>{author}</i></address>
                 </span>
