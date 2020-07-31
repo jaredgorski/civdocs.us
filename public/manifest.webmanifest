@@ -1,0 +1,28 @@
+{
+  "short_name": "civdocs.us",
+  "name": "civdocs.us",
+  "description": "civdocs.us makes it easy to read the founding documents of the United States of America. This site consumes data from api.civdocs.us, an open API meant to make these documents more widely available online.",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/assets/maskable_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#F5F5F5",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#F5F5F5"
+}
