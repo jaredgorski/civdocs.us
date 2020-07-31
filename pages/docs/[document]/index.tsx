@@ -26,7 +26,7 @@ const DocPage = ({data, documentParam}) => (
   <>
     <Head>
       <title>civdocs.us - {data.title}</title>
-      <meta name="description" content="{data.description}"></meta>
+      <meta name="description" content={data.description}></meta>
     </Head>
     <Layout>
       <div className="doc-page">

@@ -8,7 +8,7 @@ const DocSection = props => (
   <>
     <Head>
       <title>civdocs.us - {(props.doc && props.doc.title) || ''}</title>
-      <meta name="description" content="{(props.doc && props.doc.subtitle) || ''}"></meta>
+      <meta name="description" content={(props.doc && props.doc.subtitle) || ''}></meta>
     </Head>
     <Layout>
       <Doc {...props} />

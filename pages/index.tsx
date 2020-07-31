@@ -7,7 +7,6 @@ const IndexPage = ({data}) => (
   <>
     <Head>
       <title>civdocs.us</title>
-      <meta name="description" content="civdocs.us makes it easy to read the founding documents of the United States of America. This site consumes data from api.civdocs.us, an open API meant to make these documents more widely available online."></meta>
     </Head>
     <Layout>
       <div className="doc-page">
