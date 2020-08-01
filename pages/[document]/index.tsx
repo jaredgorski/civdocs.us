@@ -8,8 +8,8 @@ const DocSectionIndex = (urlPrefix, sections) => {
   return (
     <ul className="index-list">
       {sections.map((section, index) => {
-        const {section_index, subtitle, title} = section;
-        const url = `${urlPrefix}/${section_index}`;
+        const {hyphen_case_title, subtitle, title} = section;
+        const url = `${urlPrefix}/${hyphen_case_title}`;
 
         return (
           <li className="truncate" key={index}>
@@ -49,7 +49,7 @@ export async function getStaticPaths() {
   const paths = req.data && req.data.length && req.data.map(doc => {
     return {
       params: {
-        document: doc.title.toLowerCase().replace(' ', '-'),
+        document: doc.hyphen_case_title,
       },
     };
   });

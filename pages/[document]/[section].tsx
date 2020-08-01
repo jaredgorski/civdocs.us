@@ -23,7 +23,7 @@ export async function getStaticPaths() {
     const results = [];
 
     for (const doc of docs) {
-      const docTitle = doc.title.toLowerCase().replace(' ', '-');
+      const docTitle = doc.hyphen_case_title;
       const docReq = await axios.get(`${process.env.apiEndpoint}/docs/${docTitle}?verbose=true`);
       const sections = docReq.data && docReq.data.sections;
 
@@ -31,7 +31,7 @@ export async function getStaticPaths() {
         results.push({
           params: {
             document: docTitle,
-            section: section.section_index.toString(),
+            section: section.hyphen_case_title,
           },
         });
       }
