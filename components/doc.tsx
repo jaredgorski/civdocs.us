@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 
-const Content = (content = []) => content.map((paragraph, index) => <p key={index}>{paragraph}</p>)
+const Content = (content = []) => content.map((paragraph, index) => <p id={`p${index}`} key={index}>{paragraph}</p>)
 
 const DocBody = ({doc: {author, date, title, content, subtitle, prev_section_hyphen_case_title, next_section_hyphen_case_title}, documentParam}) => (
   <>
