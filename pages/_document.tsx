@@ -16,10 +16,11 @@ class MyDocument extends Document {
           <meta name="description" content={description} />
           <meta name="og:title" property="og:title" content={title} />
           <meta name="og:description" property="og:description" content={description} />
-          <meta name="theme-color" content="#F5F5F5"/>
+          <meta name="og:image" property="og:image" content="/assets/civdocs_banner.png" />
+          <meta name="theme-color" content="#F5F5F5" />
           <link rel="manifest" href="/manifest.webmanifest"></link>
           <link rel="icon" href="/assets/favicon.png"></link>
-          <link rel="apple-touch-icon" href="/assets/icon-192.png"></link>
+          <link rel="apple-touch-icon" href="/assets/maskable_icon.png"></link>
         </Head>
         <body>
           <Main />
